@@ -14,8 +14,7 @@ function Login(){
             username : name
         }
         console.log("It is hitting")
-        axios.post("http://localhost:3001/v1/signUp",obj).then((res) => console.log(res)).catch((err) => console.log(err))
-        console.log("it is hitting 2nd time")
+        console.log(obj)
     }
     return(
         <>
