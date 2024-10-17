@@ -53,7 +53,7 @@ const Signin = () => {
                     setMailErr("Feild required")
                 }
                 else{
-                    axios.post(`https://backenddeploy-k0jf.onrender.com/v1/signUp`,obj).then((res) => console.log(res)).catch((err) => console.log(err));
+                    axios.post(`https://backenddeploy-er7h.onrender.com/v1/signUp`,obj).then((res) => console.log(res)).catch((err) => console.log(err));
                     console.log(obj)
                     navigate('/login')
                 }
@@ -68,7 +68,7 @@ const Signin = () => {
                     setMailErr("feild required")
                 }
                 else{
-                    axios.post(`https://backenddeploy-k0jf.onrender.com/v1/signUp`,obj).then((res) => console.log(res)).catch((err) => console.log(err));
+                    axios.post(`https://backenddeploy-er7h.onrender.com/v1/signUp`,obj).then((res) => console.log(res)).catch((err) => console.log(err));
                     console.log(obj)
                     navigate('/login')
                 }
