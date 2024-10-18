@@ -32,7 +32,7 @@ const Login =() => {
             axios.get(`https://backenddeploy-er7h.onrender.com/v1/signIn`).then((res) => {
                 const details = res.data.find(item => item.Username === uname && item.Password === pwd)
                 if(details){
-                    navigate("/admin")
+                    navigate("/sign")
                 }
                 else{
                     setErrorValue(true)
@@ -45,7 +45,7 @@ const Login =() => {
             axios.get(`https://backenddeploy-er7h.onrender.com/v1/signIn`).then((res) => {
                 const details = res.data.find(item => item.Username === uname && item.Password === pwd)
                 if(details){
-                    navigate("/user")
+                    navigate("/sign")
                 }
                 else{
                     setError("credentials not matching")
